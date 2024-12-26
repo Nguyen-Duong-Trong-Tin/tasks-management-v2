@@ -274,6 +274,8 @@ const changeMulti = async (req: any, res: Response) => {
           });
           tasks.push(newTask);
         }
+
+        break;
       }
 
       case "delete": {
@@ -285,6 +287,8 @@ const changeMulti = async (req: any, res: Response) => {
           });
           tasks.push(newTask);
         }
+
+        break;
       }
     }
 
