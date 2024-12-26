@@ -19,12 +19,6 @@ const sendMail_helper_1 = __importDefault(require("../../../helpers/sendMail.hel
 const generate_helper_1 = __importDefault(require("../../../helpers/generate.helper"));
 const md5_util_1 = __importDefault(require("../utils/md5.util"));
 const jwt_util_1 = __importDefault(require("../utils/jwt.util"));
-const test = (req, res) => {
-    return res.status(200).json({
-        status: true,
-        message: "OK"
-    });
-};
 const me = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const myUserId = req.user.code;
@@ -293,7 +287,6 @@ const reset = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 const userController = {
-    test,
     me,
     register,
     login,

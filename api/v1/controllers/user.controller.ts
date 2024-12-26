@@ -13,13 +13,6 @@ import generate from "../../../helpers/generate.helper";
 import md5Util from "../utils/md5.util";
 import jwtUtil from "../utils/jwt.util";
 
-const test = (req: Request, res: Response) => {
-  return res.status(200).json({
-    status: true,
-    message: "OK"
-  });
-}
-
 // [GET] /api/v1/users/me
 const me = async (req: any, res: Response) => {
   try {
@@ -320,7 +313,6 @@ const reset = async (req: Request, res: Response) => {
 }
 
 const userController = {
-  test,
   me,
   register,
   login,

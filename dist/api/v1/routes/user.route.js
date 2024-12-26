@@ -8,7 +8,6 @@ const router = express_1.default.Router();
 const deserializeUser_middleware_1 = __importDefault(require("../middlewares/deserializeUser.middleware"));
 const user_validate_1 = __importDefault(require("../validates/user.validate"));
 const user_controller_1 = __importDefault(require("../controllers/user.controller"));
-router.get("/test", user_controller_1.default.test);
 router.get("/me", [deserializeUser_middleware_1.default], user_controller_1.default.me);
 router.post("/register", user_validate_1.default.register, user_controller_1.default.register);
 router.post("/login", user_validate_1.default.login, user_controller_1.default.login);
