@@ -1,9 +1,14 @@
-export enum EUserRole {
+enum EUserRole {
   ADMIN = "ADMIN",
   USER = "USER"
 }
 
-export enum EUserStatus {
+enum EUserStatus {
   ACTIVE = "ACTIVE",
   INACTIVE = "INACTIVE"
+}
+
+export {
+  EUserRole,
+  EUserStatus
 }

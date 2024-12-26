@@ -9,7 +9,7 @@ interface IUserFull {
   status: EUserStatus;
   deleted: boolean;
   deletedAt: Date;
-}
+};
 
 export {
   IUserFull

@@ -4,6 +4,9 @@ const app = express();
 import dotenv from "dotenv";
 dotenv.config();
 
+const cors = require("cors");
+app.use(cors());
+
 import bodyParser from "body-parser";
 app.use(bodyParser.json());
 
