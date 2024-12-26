@@ -5,6 +5,8 @@ import deserializeUser from "../middlewares/deserializeUser.middleware";
 import validate from "../validates/user.validate";
 import controller from "../controllers/user.controller";
 
+router.get("/test", controller.test);
+
 router.get(
   "/me",
   [deserializeUser],
